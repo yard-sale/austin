@@ -14,7 +14,7 @@ let dev = true;
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./app/**/*')
     .pipe(ghPages());
 });
 gulp.task('styles', () => {
@@ -30,6 +30,18 @@ gulp.task('styles', () => {
     .pipe($.if(dev, $.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
+});
+
+var sass = require('gulp-sass');
+
+gulp.task('sass', function () {
+  return gulp.src('app/styles/main.scss')
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest('styles/css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('app/styles/main.scss', ['sass']);
 });
 
 gulp.task('scripts', () => {
