@@ -2630,6 +2630,9 @@ tbody.collapse.show {
 .card-text:last-child {
   margin-bottom: 0; }
 
+.card-deck {
+  margin-bottom: 20px; }
+
 .card-link:hover {
   text-decoration: none; }
 .card-link + .card-link {
