@@ -1,6 +1,7 @@
 // bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
+
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -13,6 +14,11 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  color: $blue;
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -34,6 +40,37 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
+}
+
+.sign {
+  text-align: center;
+  letter-spacing: .08em;
+  color: $blue;
+  text-shadow: -.02em .02em 0px $yellow, .02em -.02em 0px $yellow,  -.04em .04em 0px white, -.03em .03em 0px white, -.02em -.02em 0px $yellow;
+  font-size: 10em;
+  font-family: "house-slant",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+ h4, .btn {
+  letter-spacing: .1em;
+  font-weight: 700;
+}
+
+.card h3, h4 span {
+  font-size: 1em;
+  font-family: "house-slant",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+}
+
+.header h3 {
+  font-family: "house-slant",sans-serif;
+  letter-spacing: .2em;
+  text-shadow: -.03em .03em 0px white, .03em -.03em 0px white,  -.06em .06em 0px $yellow, -.06em .06em 0px $yellow, -.02em -.02em 0px white;
+
 }
 
 /* Custom page footer */
