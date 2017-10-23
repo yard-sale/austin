@@ -20,8 +20,8 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 1.2em;
-}
-
+} PO Box 9350 78766-9350
+314977405 900929698
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -73,7 +73,9 @@ body {
   text-shadow: -.03em .03em 0px white, .03em -.03em 0px white,  -.06em .06em 0px $yellow, -.06em .06em 0px $yellow, -.02em -.02em 0px white;
 
 }
-
+.card p > a {
+  color: #17a2b8;
+}
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
